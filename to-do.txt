@@ -1,0 +1,30 @@
+Explore
+Genres
+Favorites
+Profile
+
+
+
+Explore-> 
+
+Movies
+
+Genres
+
+Factions?
+
+
+Movie->Harry
+
+Factions as Tiles
+
+1      2
+3      4
+
+
+
+Faction -> Follow Wishlist
+
+   Description
+
+More like this

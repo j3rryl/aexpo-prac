@@ -11,8 +11,9 @@ const Layout = () => {
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="explore"
         options={{
+          headerShown: false,
           tabBarLabel: "Explore",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="search" color={color} size={size} />
