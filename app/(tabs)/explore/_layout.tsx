@@ -7,6 +7,8 @@ const Page = () => {
         name="index"
         options={{
           headerTitle: "Explore",
+          headerBlurEffect: "regular",
+          headerTransparent: true,
           headerSearchBarOptions: {
             placeholder: "Search Movies",
           },
