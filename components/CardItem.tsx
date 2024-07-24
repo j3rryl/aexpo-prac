@@ -1,13 +1,9 @@
+import { MovieProp } from "@/constants/sample";
 import React from "react";
 import { View, Text, StyleSheet, Image } from "react-native";
 
-type CardItemProp = {
-  name: string;
-  genre: string;
-  thumbnail: string;
-};
 interface Props {
-  cardItem: CardItemProp;
+  cardItem: MovieProp;
 }
 const CardItem: React.FC<Props> = ({ cardItem }) => {
   return (

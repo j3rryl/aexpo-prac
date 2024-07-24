@@ -1,4 +1,10 @@
-export const sample = [
+export type MovieProp = {
+  name: string;
+  genre: string;
+  thumbnail: string;
+};
+
+export const sample: MovieProp[] = [
   {
     name: "The Shawshank Redemption",
     genre: "Drama",
