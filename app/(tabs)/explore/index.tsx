@@ -1,11 +1,13 @@
-import { useHeaderHeight } from "@react-navigation/elements";
-import { View, Text } from "react-native";
+import CardItem from "@/components/CardItem";
+import { sample } from "@/constants/sample";
+import { ScrollView } from "react-native";
 const Page = () => {
-  const headerHeight = useHeaderHeight();
   return (
-    <View style={{ paddingTop: headerHeight }}>
-      <Text>Hello</Text>
-    </View>
+    <ScrollView contentInsetAdjustmentBehavior="automatic">
+      {sample.map((item, i) => (
+        <CardItem key={i} cardItem={item} />
+      ))}
+    </ScrollView>
   );
 };
 
