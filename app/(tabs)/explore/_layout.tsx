@@ -7,6 +7,12 @@ const Page = () => {
         name="index"
         options={{
           headerTitle: "Explore",
+          headerLargeTitle: true,
+          headerTitleStyle: { color: "#008080" },
+          headerLargeTitleShadowVisible: false,
+          headerShadowVisible: false,
+          headerStyle: { backgroundColor: "rgb(242, 242,242)" },
+
           headerSearchBarOptions: {
             placeholder: "Search Movies",
           },
