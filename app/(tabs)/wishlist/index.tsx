@@ -1,14 +1,19 @@
 import CardItem from "@/components/CardItem";
-import { sample } from "@/constants/sample";
-import { ScrollView, Text, View } from "react-native";
+import { MovieProp, sample } from "@/constants/sample";
+import { FlatList, ListRenderItem, View } from "react-native";
 
 const Page = () => {
+  const renderItem: ListRenderItem<MovieProp> = ({ item }) => (
+    <CardItem cardItem={item as MovieProp} />
+  );
   return (
-    <ScrollView contentInsetAdjustmentBehavior="automatic">
-      {sample.map((item, i) => (
-        <CardItem key={i} cardItem={item} />
-      ))}
-    </ScrollView>
+    <View>
+      <FlatList
+        data={sample}
+        keyExtractor={(item) => item.name}
+        renderItem={renderItem}
+      />
+    </View>
   );
 };
 
