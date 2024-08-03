@@ -69,5 +69,5 @@ const styles = StyleSheet.create({
     fontWeight: "700",
   },
 });
-//Hello ThursdayFriday
+//Hello Saturday
 export default Page;
